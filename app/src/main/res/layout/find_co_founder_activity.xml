@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindCofounder">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarBusCom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="2dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title=" Create plan to find Bussiness Companion"
+        app:titleTextAppearance="@style/ToolbarTitleTheme" />
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="212dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarBusCom"
+            app:srcCompat="@drawable/findcof" />
+
+        <TextView
+            android:id="@+id/find_a_co_f"
+            android:layout_width="281.9dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/find_a_co_founder_by_setting_up_your_prefrences_ntell_us_about_your_company"
+            android:textColor="#2A2A2A"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/edittextone"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/outline"
+            android:gravity="top"
+            android:hint="@string/edit_text_hint_fr_com"
+            android:onClick="OnClickedCFEdit"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/find_a_co_f" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnercompen"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittextone" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerphase"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnercompen" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/websiteEditText"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center_vertical"
+            android:hint="@string/website"
+            android:onClick="OnCLickedWebsite"
+            android:background="@drawable/outline"
+            android:paddingStart="20dp"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerphase" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/LinkedinEditText"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center_vertical"
+            android:hint="@string/linkedn"
+            android:onClick="OnClickedLinkedin"
+            android:paddingStart="20dp"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/outline"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/websiteEditText" />
+
+        <Button
+            android:id="@+id/FindCofounderNext"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="158dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/nxtbtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LinkedinEditText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+

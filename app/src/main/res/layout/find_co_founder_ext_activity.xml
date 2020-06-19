@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindCofounderExt">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarBusComEx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="2dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title=" Create plan to find Bussiness Companion"
+            app:titleTextAppearance="@style/ToolbarTitleTheme" />
+
+
+        <ImageView
+            android:id="@+id/imageView44"
+            android:layout_width="212dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarBusComEx"
+            app:srcCompat="@drawable/findcof" />
+
+        <TextView
+            android:id="@+id/find_a_co_f_ex"
+            android:layout_width="281.9dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/find_a_co_founder_by_setting_up_your_prefrences_ntell_us_about_your_company"
+            android:textColor="#2A2A2A"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView44" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/edittextonee"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/outline"
+            android:gravity="top"
+            android:hint="@string/about_role"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/find_a_co_f_ex" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/websiteEditText"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center_vertical"
+            android:hint="@string/shoulcarryskill"
+            android:background="@drawable/outline"
+            android:paddingStart="20dp"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittextonee" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/round__background"
+            android:divider="@drawable/radio_button_gender"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/websiteEditText">
+
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="115dp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center_vertical"
+                android:scaleX="0.70"
+                android:scaleY="0.70"
+                android:text="@string/male"
+                android:textColor="#2A2A2A"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center_vertical"
+                android:scaleX="0.70"
+                android:scaleY="0.70"
+                android:text="@string/female"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center_vertical"
+                android:scaleX="0.70"
+                android:scaleY="0.70"
+                android:text="@string/any"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:text="@string/looking_for"
+            android:textColor="#778899"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/radioGroup"
+            app:layout_constraintStart_toStartOf="@+id/radioGroup"
+            app:layout_constraintTop_toTopOf="@+id/radioGroup" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnercompAmt"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup185"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/round__background"
+            android:divider="@drawable/radio_btn_ysno"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/extractEditTexttwo3">
+
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="130dp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center_vertical"
+                android:scaleX="0.70"
+                android:scaleY="0.70"
+                android:text="@string/yes"
+                android:textColor="#2A2A2A"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center_vertical"
+                android:scaleX="0.70"
+                android:scaleY="0.70"
+                android:text="@string/no"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:text="@string/equity"
+            android:textColor="#778899"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/radioGroup185"
+            app:layout_constraintStart_toStartOf="@+id/radioGroup185"
+            app:layout_constraintTop_toTopOf="@+id/radioGroup185" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/extractEditTexttwo3"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/outline"
+            android:hint="@string/benefits"
+            android:paddingStart="20dp"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnercompAmt" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinneredu"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/spinner"
+            app:layout_constraintEnd_toStartOf="@+id/spinnerTimeline"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup185" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/spinnerTimeline"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/outline"
+            android:padding="20dp"
+            android:hint="@string/ex_in_yrs"
+            android:textAlignment="gravity"
+            app:layout_constraintBottom_toBottomOf="@+id/spinneredu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/spinneredu"
+            app:layout_constraintTop_toTopOf="@+id/spinneredu"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1854"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/round__background"
+            android:divider="@drawable/radio_btn_ysno"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerTimeline">
+
+
+            <RadioButton
+                android:id="@+id/radioButton44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="130dp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center_vertical"
+                android:scaleX="0.70"
+                android:scaleY="0.70"
+                android:text="@string/yes"
+                android:textColor="#2A2A2A"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton295"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center_vertical"
+                android:scaleX="0.70"
+                android:scaleY="0.70"
+                android:text="@string/no"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView254"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:text="@string/fulltime"
+            android:textColor="#778899"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/radioGroup1854"
+            app:layout_constraintStart_toStartOf="@+id/radioGroup1854"
+            app:layout_constraintTop_toTopOf="@+id/radioGroup1854" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerloc"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="21dp"
+            android:background="@drawable/spinner"
+            app:layout_constraintEnd_toStartOf="@+id/spinnerTime"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup1854" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerTime"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/spinner"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerloc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/spinnerloc"
+            app:layout_constraintTop_toTopOf="@+id/spinnerloc"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/CoFounderNextExt"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="156dp"
+            android:layout_marginBottom="148dp"
+            android:background="@drawable/nxtbtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerloc"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

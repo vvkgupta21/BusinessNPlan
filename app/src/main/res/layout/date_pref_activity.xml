@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatePref">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="2dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title=" Create a plan to find date"
+            app:titleTextAppearance="@style/ToolbarTitleTheme" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="296dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="29dp"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:text="@string/find_your_date_by_adding_your_preferrences_choices_enter_your_date_choice"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/extractEditTexttwo7"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/outline"
+            android:drawableLeft="@drawable/ic_location_on"
+            android:drawablePadding="5.6dp"
+            android:drawableTint="#D3D3D3"
+            android:gravity="center_vertical"
+            android:hint="@string/Location"
+            android:paddingStart="20dp"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/extractEditTexttwo2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/outline"
+            android:drawablePadding="5.6dp"
+            android:drawableTint="#D3D3D3"
+            android:gravity="center_vertical"
+            android:hint="@string/Workout"
+            android:paddingStart="20dp"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/extractEditTexttwo7" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/extractEditTexttwo3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/outline"
+            android:drawableLeft="@drawable/drink"
+            android:drawablePadding="5.6dp"
+            android:gravity="center_vertical"
+            android:hint="@string/Drink"
+            android:paddingStart="20dp"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/extractEditTexttwo2" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/extractEditTexttwo4"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/outline"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:drawableLeft="@drawable/smoke"
+            android:drawablePadding="5.6dp"
+            android:drawableTint="#C0C0C0"
+            android:gravity="center_vertical"
+            android:hint="@string/Smoke"
+            android:paddingStart="20dp"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/extractEditTexttwo3" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/extractEditTexttwo5"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/outline"
+            android:layout_marginEnd="30dp"
+            android:drawableLeft="@drawable/pets"
+            android:drawablePadding="5.6dp"
+            android:gravity="center_vertical"
+            android:hint="@string/Pets"
+            android:paddingStart="20dp"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/extractEditTexttwo4" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/extractEditTexttwo6"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:drawableLeft="@drawable/aries"
+            android:background="@drawable/outline"
+            android:drawablePadding="5.6dp"
+            android:gravity="center_vertical"
+            android:hint="@string/Aries"
+            android:paddingStart="20dp"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/extractEditTexttwo5" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/extractEditTexttwo8"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:drawableLeft="@drawable/religion"
+            android:drawablePadding="5.6dp"
+            android:gravity="center_vertical"
+            android:hint="@string/Religion"
+            android:background="@drawable/outline"
+            android:paddingStart="20dp"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/extractEditTexttwo6" />
+
+        <android.inputmethodservice.ExtractEditText
+            android:id="@+id/extractEditTexttwo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:drawableLeft="@drawable/food"
+            android:drawablePadding="5.6dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/outline"
+            android:hint="@string/Food"
+            android:paddingStart="20dp"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/extractEditTexttwo8" />
+
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerPrefEdu"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/extractEditTexttwo" />
+
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerPrefRel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerPrefEdu" />
+
+
+        <ImageView
+            android:id="@+id/nextimagetwo"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginBottom="145dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerPrefRel"
+            app:srcCompat="@drawable/nxtbtn" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="What are your preferences!!"
+            android:textAlignment="center"
+            android:textColor="#2A2A2A"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

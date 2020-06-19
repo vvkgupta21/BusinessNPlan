@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">metby_bussiness</string>
+    <string name="edit_text_hint"><font size="12">Write about your plan...</font></string>
+    <string name="you_can_find_a_business_partner_or_co_founder_you_can_also_create_partner_for_particular_projects">You can find a business partner or co-founder. You can also create partner for particular projects.</string>
+    <string name="find_a_co_founder">Find a Co-Founder!!</string>
+    <string name="find_a_co_founder_by_setting_up_your_prefrences_ntell_us_about_your_company">Find a co-founder by setting up your prefrences.\nTell us about your company.</string>
+    <string name="edit_text_hint_fr_com"><font size="12">About Your Idea and Vision...</font></string>
+    <string name="website"><font size="12">Website</font></string>
+    <string name="linkedn"><font size="12">Linkdin Page Url</font></string>
+    <string name="about_role"><font size="12">About the role...</font></string>
+    <string name="shoulcarryskill"><font size="12">Should Carry Skills...</font></string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="any">Any</string>
+    <string name="looking_for">Looking for</string>
+    <string name="benefits"><font size="12">Benefits</font></string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="equity">Equity</string>
+    <string name="ex_in_yrs"><font size="12">Exp. in years </font></string>
+    <string name="fulltime"><font size="12">Fulltime</font></string>
+    <string name="find_a_partner_in_your_project">Find a partner in your project.</string>
+    <string name="about_ur_prjct"><font size="12">About Your Project...</font></string>
+    <string name="what_r_u_looking"><font size="12">What you are looking for?</font></string>
+    <string name="project_link"><font size="12">Project Link</font></string>
+    <string name="shud__carry_skill"><font size="12">Should Carry Skills...</font></string>
+    <string name="benifits"><font size="12">Benefits</font></string>
+    <string name="add_project_pictures">Add Project Pictures</string>
+    <string name="fina_a_partner_for_your_business_tell_us_something_about_your_business">Find a partner for your business. Tell us something about your business</string>
+    <string name="find_your_date_by_adding_your_preferrences_choices_enter_your_date_choice"><![CDATA[Find your date by adding your preferrences & choices. Enter your date choice.]]></string>
+    <string name="describe_your_perfect_date"><font size="12">Describe your perfect date...</font></string>
+    <string name="age">Age</string>
+    <string name="Meeting_point"><font size="12">Meeting Point</font></string>
+    <string name="Location"><font size="12">Location</font></string>
+    <string name="Workout"><font size="12">Workout</font></string>
+    <string name="Drink"><font size="12">Drink</font></string>
+    <string name="Smoke"><font size="12">Smoke</font></string>
+    <string name="Pets"><font size="12">Pets</font></string>
+    <string name="Aries"><font size="12">Aries</font></string>
+    <string name="Religion"><font size="12">Religion</font></string>
+    <string name="Food"><font size="12">Food</font></string>
+
+    <string name="relationship">Selected item:</string>
+    <string-array name="relation_for_list">
+        <item>Relationship</item>
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+    </string-array>
+
+    <string name="TypeOfCompanion">Selected item:</string>
+    <string-array name="CompanionList">
+        <item>Type of Companion</item>
+        <item>Co-Founder</item>
+        <item>Project Partner</item>
+        <item>Business Partner</item>
+    </string-array>
+
+    <string name="lookingfor">Selected item:</string>
+    <string-array name="looking_for_list">
+        <item>Looking for</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Any</item>
+    </string-array>
+
+    <string name="funding">Selected item:</string>
+    <string-array name="funding_list_item">
+        <item>Funding</item>
+        <item>x</item>
+        <item>y</item>
+        <item>z</item>
+    </string-array>
+
+    <string name="phase">Selected item:</string>
+    <string-array name="phase_for_list">
+        <item>Phase</item>
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+    </string-array>
+
+    <string name="location">Selected item:</string>
+    <string-array name="location_for_list">
+        <item>Location</item>
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+    </string-array>
+
+    <string name="timeline">Selected item:</string>
+    <string-array name="timeline_for_list">
+        <item>Timeline</item>
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+    </string-array>
+
+    <string name="education">Selected item:</string>
+    <string-array name="education_for_list">
+        <item>Education</item>
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+    </string-array>
+
+    <string name="typesofproject">Selected item:</string>
+    <string-array name="typesofproject_for_list">
+        <item>Types of project</item>
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+    </string-array>
+
+    <string name="compensationamount">Selected item:</string>
+    <string-array name="compensationamount_for_list">
+        <item>Compensation Amount</item>
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+    </string-array>
+
+</resources>
+
+
